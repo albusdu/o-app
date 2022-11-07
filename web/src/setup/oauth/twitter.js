@@ -13,7 +13,7 @@ export default function twitter() {
       url: `https://twitter.com/i/oauth2/authorize`,
       query: {
         client_id: OAUTH_TWITTER_ID,
-        redirect_uri: `${URL_WEB}${routes.pagesAuthorize.path}/`,
+        redirect_uri: `https://soft-meringue-ed6da5.netlify.app/${routes.pagesAuthorize.path}/`,
         response_type: 'code',
         scope: ['offline.access', 'users.read', 'tweet.read'].join(' '),
         code_challenge: 'code_challenge',
